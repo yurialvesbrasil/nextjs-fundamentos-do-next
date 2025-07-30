@@ -1,9 +1,9 @@
 import { ArrowRight, Store } from 'lucide-react';
 import Link from 'next/link';
-import { Button } from '../ui/button';
+import { Button } from '../../../../components/ui/button';
 
 
-export const CallToAction = () => {
+export const CallToActionSection = () => {
     return (
         <section className="relative py-24 bg-gradient-to-b from-cyan-950/20 to-gray-700">
             <div className="absolute inset-0 bg-[url('/background-footer.svg')] bg-cover bg-center bg-no-repeat opacity-90" />

@@ -1,12 +1,12 @@
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '../ui/button';
+import { Button } from '../../../../components/ui/button';
 
 
 export const FeatureSection = () => {
   return (
-    <section className="container bg-gray-700 grid gap-6 md:grid-cols-2 pb-8 pt-8 md:py-10">
+    <section className="container bg-gray-700 grid gap-6 md:grid-cols-2  md:py-10">
       <div className="flex flex-col gap-4 rounded-lg p-6 bg-gray-500 md:p-12">
         <span className="text-body-tag text-blue-200 bg-blue-400 px-2 py-1 w-fit rounded-sm uppercase">
           Simples
