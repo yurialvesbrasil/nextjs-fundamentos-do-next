@@ -65,3 +65,6 @@ https://www.figma.com/community/file/1491107537598172161/landing-page-e-blog
 - **PostCSS**: Plugins configurados em `postcss.config.js`.
 - **TypeScript**: Paths customizados em `tsconfig.json`.
 - **ESLint**: Configuração em `eslint.config.mjs`.
+
+## Gerar conteúdo do blog
+```pnpm contentlayer build```
