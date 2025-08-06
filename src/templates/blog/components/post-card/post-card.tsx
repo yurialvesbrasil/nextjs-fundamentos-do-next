@@ -11,7 +11,7 @@ type PostCardProps = {
   slug: string;
   title: string;
   description: string;
-  image: string;
+  image?: string;
   date: string;
   author: Author;
 };
@@ -39,7 +39,7 @@ export const PostCard = ({
           </div>
 
           <Image
-            src={image}
+            src={image ?? '/placeholder-image.png'}
             alt=""
             width={288}
             height={144}

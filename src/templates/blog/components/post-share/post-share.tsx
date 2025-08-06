@@ -1,6 +1,6 @@
 'use client';
 import { Button } from '@/components/ui/button';
-import { useShare } from '@/hooks';
+//import { useShare } from '@/hooks';
 
 type PostShareProps = {
   url: string;
@@ -9,11 +9,11 @@ type PostShareProps = {
 };
 
 export const PostShare = ({ url, title, description }: PostShareProps) => {
-  const { shareButtons } = useShare({
+  /*const { shareButtons } = useShare({
     url,
     title,
     text: description,
-  });
+  });*/
 
   return (
     <aside className="space-y-6">
@@ -23,7 +23,7 @@ export const PostShare = ({ url, title, description }: PostShareProps) => {
         </h2>
 
         <div className="flex justify-between md:flex-col gap-2">
-          {shareButtons.map((provider) => (
+          {/*shareButtons.map((provider) => (
             <Button
               key={provider.provider}
               onClick={() => provider.action()}
@@ -33,7 +33,7 @@ export const PostShare = ({ url, title, description }: PostShareProps) => {
               {provider.icon}
               <span className="hidden md:block">{provider.name}</span>
             </Button>
-          ))}
+          ))*/}
         </div>
       </div>
     </aside>
