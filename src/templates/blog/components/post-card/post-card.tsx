@@ -49,9 +49,9 @@ export const PostCard = ({
 
         {/* Post info */}
         <div className="px-2 my-4 space-y-4">
-          <h2 className="text-heading-sm text-gray-100 line-clamp-3">
+            <h2 className="text-heading-sm text-gray-100 line-clamp-3 min-h-[3.5rem]">
             {title}
-          </h2>
+            </h2>
 
           <p className="text-gray-300 text-body-sm line-clamp-3">
             {description}
