@@ -14,7 +14,7 @@ export const Search = () => {
     (event: React.FormEvent) => {
       event.preventDefault();
       if (query.trim()) {
-        router.push(`/blog?q=${encodeURIComponent(query)}`);
+        router.push(`/blog-page?q=${encodeURIComponent(query)}`);
       }
     },
     [query, router]
@@ -22,13 +22,13 @@ export const Search = () => {
 
   const handleQueryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newQuery = event.target.value;
-    router.push(`/blog?q=${encodeURIComponent(newQuery)}`, {
+    router.push(`/blog-page?q=${encodeURIComponent(newQuery)}`, {
       scroll: false,
     });
   };
 
   const resetSearch = () => {
-    router.push('/blog', { scroll: false });
+    router.push('/blog-page', { scroll: false });
   };
 
   useEffect(() => {
