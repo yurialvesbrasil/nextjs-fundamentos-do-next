@@ -26,7 +26,7 @@ export const PostCard = ({
 }: PostCardProps) => {
   return (
     <Link
-      href={`/blog-page/${slug}`}
+      href={`/blog/${slug}`}
       className="w-full max-w-2xl rounded-[12px] border-[1px] border-gray-400 bg-gray-600 overflow-hidden transition-all duration-300 hover:border-[1px] hover:border-blue-300"
     >
       {/* Post Content */}

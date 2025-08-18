@@ -19,7 +19,7 @@ export type PostPageProps = {
 
 export const PostPage = ({ post }: PostPageProps) => {
   const publishedDate = new Date(post?.date).toLocaleDateString('pt-BR');
-  const postUrl = `https://site.set/blog-page/${post.slug}`;
+  const postUrl = `https://site.set/blog/${post.slug}`;
 
   return (
     <main className="py-20 text-gray-100">
@@ -28,7 +28,7 @@ export const PostPage = ({ post }: PostPageProps) => {
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink asChild className="text-action-sm">
-                <Link href="/blog-page">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />

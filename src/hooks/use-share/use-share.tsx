@@ -7,6 +7,7 @@ import {
 } from './social-providers';
 import { useClipboard } from '../use-clipboard';
 
+//Aqui cria um tipo com as propriedades de outro mais um
 type UseShareProps = ShareConfig & {
   clipboardTimeout?: number;
 };
@@ -19,13 +20,14 @@ export const useShare = ({
 }: UseShareProps) => {
   const { isCopied, handleCopy } = useClipboard({ timeout: clipboardTimeout });
 
+  //Mantem memória dos parâmetros de entrada
   const shareConfig = useMemo(
     () => ({
       url,
-      ...(title && { title }),
-      ...(text && { text }),
+      ...(title && { title }), // só cria o title se ele vir nas propriedades
+      ...(text && { text }), // só cria o text se ele vir nas propriedades
     }),
-    [url, title, text]
+    [url, title, text] // Se um desses mudar recalcula.
   );
 
   const share = useCallback(

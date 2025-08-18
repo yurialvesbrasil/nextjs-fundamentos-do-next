@@ -8,7 +8,6 @@ export const LandingPage = () => {
             <FeatureSection />
             <SupportSection />
             <CustomerStorySection />
-            <CallToActionSection />
         </article>
     )
 }
