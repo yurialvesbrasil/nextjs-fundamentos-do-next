@@ -22,7 +22,7 @@ export const PostShare = ({ url, title, description }: PostShareProps) => {
           Compartilhar
         </h2>
 
-        <div className="flex justify-between md:flex-col gap-2">
+        <div className="flex justify-end md:justify-between md:flex-col gap-2">
           {shareButtons.map((provider) => (
             <Button
               key={provider.provider}
