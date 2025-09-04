@@ -11,7 +11,7 @@ type BlogPostPage = {
 export default async function BlogPostPage({ params }: BlogPostPage) {
   const { slug } = await params;
   const post = allPosts.find((post) => post.slug === slug);
-
+  console.log(slug);
   if (!post) {
     notFound();
   }
