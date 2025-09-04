@@ -5,6 +5,10 @@ Projeto desenvolvido com foco nos fundamentos do Next.js, estilização moderna 
 ## Figma do projeto
 https://www.figma.com/community/file/1491107537598172161/landing-page-e-blog
 
+## Preview do projeto
+https://nextjs-fundamentos-do-next.vercel.app
+
+
 ## Tecnologias e Bibliotecas Principais
 
 - **Next.js 15** – Framework React para SSR/SSG.
