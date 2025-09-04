@@ -8,6 +8,18 @@ type BlogPostPage = {
   }>;
 };
 
+export const revalidate = 60;
+
+//Tenta gerar página que ainda não foi gerada em build
+export const dynamicParams = true;
+
+
+export async function generateStaticParams() {
+  return allPosts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export default async function BlogPostPage({ params }: BlogPostPage) {
   const { slug } = await params;
   const post = allPosts.find((post) => post.slug === slug);
